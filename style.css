@@ -1,37 +1,52 @@
-body{
-    overflow-x: hidden;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9fafb;
+    color: #212529;
 }
 
-.topBarDiv{
-    width: 100%;
-    height: 20%;
-    background-color: black;
+header {
+    background-color: #0b0806;
     color: white;
-    display: flex;
-    flex-direction: column;
+    padding: 2rem 0.5rem;
     text-align: center;
 }
 
-.contentDiv{
-    padding-top: 2%;
-    width: 100%;
-    height: 60%;
+.hero {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.feature {
+    padding: 2rem;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    height: 100%;
 }
 
-.bottomBarDiv{
-    width: 100%;
-    height: 20%;
-    background-color: black;
-    color: white;
+.icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #00d2c6;
+}
+
+.btn-primary {
+    background-color: #00d2c6;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #018b85;
+}
+
+footer {
+    background-color: #111;
+    color: #ccc;
+    padding: 0.2rem 0;
     text-align: center;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .rechteDiv {
@@ -42,16 +57,12 @@ body{
     justify-content: center;
 }
 
-.icon{
-    font-size: 250%;
-}
-
 .rechteElement {
     margin-right: 1%;
     margin-left: 1%;
 }
 
-.backButton{
+.backButton {
     border: solid 1px black;
     border-radius: 10px;
     margin: 2%;
@@ -60,6 +71,6 @@ body{
     transition: all 0.15s;
 }
 
-.backButton:hover{
+.backButton:hover {
     transform: scale(1.05);
 }

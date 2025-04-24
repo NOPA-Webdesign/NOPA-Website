@@ -75,3 +75,14 @@ footer {
 .backButton:hover {
     transform: scale(1.05);
 }
+
+.insta-icon {
+    display: flex; 
+    justify-self: end; 
+    margin: -2.5% 3% 0 0;
+}
+
+.insta-icon:hover {
+    opacity: 0.8;
+    transition: 0.7s;
+}

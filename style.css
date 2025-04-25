@@ -1,88 +1,122 @@
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f9fafb;
-    color: #212529;
-}
-
-header {
-    background-color: #0b0806;
-    color: white;
-    padding: 2rem 0.5rem;
-    text-align: center;
-}
-/*test*/
-
-.hero {
-    padding: 3rem 1rem;
-    text-align: center;
-}
-
-.feature {
-    padding: 2rem;
-    background-color: white;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    height: 100%;
-}
-
-.icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: #00d2c6;
-}
-
-.btn-primary {
-    background-color: #00d2c6;
-    border: none;
-}
-
-.btn-primary:hover {
-    background-color: #018b85;
-}
-
-footer {
-    background-color: #111;
-    color: #ccc;
-    padding: 0.2rem 0;
-    text-align: center;
-    margin-top: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.rechteDiv {
-    display: flex;
-    flex-direction: row;
+html, body {
+    --white: #f9fafb;
+    --btn-normal: #01D7C6;
+    --btn-active: #108f84;
     width: 100%;
     height: 100%;
-    justify-content: center;
+    margin: 0%;
+    font: 1em sans-serif;
+    background-color: var(--white);
 }
 
-.rechteElement {
-    margin-right: 1%;
-    margin-left: 1%;
+.mainDiv {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topBarDiv {
+    background-color: black;
+    color: var(--white);
+    font-size: 1.25em;
+    padding: 20px;
+    margin-bottom: 1em;
+}
+
+.middleDiv {
+    align-self: center;
+}
+
+.middleDiv2 {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: left;
+}
+
+h1 {
+    justify-self: center;
+}
+
+h3 {
+    padding: 1%;
+    font-size: 1.75em;
+}
+
+.anfragen {
+    border: none;
+    border-radius: 10px;
+    padding: 7px;
+    width: 10em;
+    color: var(--white);
+    background-color: var(--btn-normal);
+    margin-bottom: 2em;
+}
+
+.anfragen:hover {
+    background-color: var(--btn-active);
+    transition: 0.25s;
+}
+
+.skillsDiv {
+    display: flex;
+    min-width: 95%;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.skills {
+    background-color: white;
+    width: 22%;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 2.5em;
+    box-shadow: 0 0 8px 0 rgba(127, 127, 127, 0.1)
+}
+
+.pBold {
+    font-weight: bold;
+}
+
+.linkA {
+    font-weight: 400;
+    color: var(--btn-normal);  
+}
+
+.linkA:hover {
+    color: var(--btn-active);
+    transition: 0.25s;
+}
+
+
+footer {
+    background-color: black;
+    color: var(--white);
+}
+
+.iconDiv {
+    justify-self: end; 
+    margin: -3em 2em 1em 0;
 }
 
 .backButton {
-    border: solid 1px black;
-    border-radius: 10px;
-    margin: 2%;
-    padding: 0.4%;
-    background-color: white;
-    transition: all 0.15s;
+    width: 7.5em;
+    padding: 0.5em;
+    border-radius: 15px;
+    margin: 1em;
 }
 
-.backButton:hover {
-    transform: scale(1.05);
-}
-
-.insta-icon {
-    display: flex; 
-    justify-self: end; 
-    margin: -2.5% 3% 0 0;
-}
-
-.insta-icon:hover {
-    opacity: 0.8;
-    transition: 0.7s;
+@media (max-width: 700px) {
+    .skillsDiv {
+        flex-direction: column;
+    }
+    .skills {
+        width: auto;
+    }
+    .iconDiv {
+        margin: 0;
+    }
 }

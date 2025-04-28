@@ -121,7 +121,7 @@ footer {
     }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
     .skillsDiv {
         flex-direction: row;
     }
@@ -129,7 +129,7 @@ footer {
         width: auto;
     }
     .iconDiv {
-        margin-top: 2em;
+        margin: 2em;
     }
 }
 

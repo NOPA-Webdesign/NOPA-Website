@@ -109,12 +109,24 @@ footer {
     margin: 1em;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 320px) {
     .skillsDiv {
         flex-direction: column;
     }
     .skills {
         width: auto;
+    }
+    .iconDiv {
+        margin: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .skillsDiv {
+        flex-direction: row;
+    }
+    .skills {
+        width: 22%;
     }
     .iconDiv {
         margin: 0;

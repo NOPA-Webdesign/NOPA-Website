@@ -121,18 +121,6 @@ footer {
     }
 }
 
-@media (max-width: 1024px) {
-    .skillsDiv {
-        flex-direction: row;
-    }
-    .skills {
-        width: auto;
-    }
-    .iconDiv {
-        margin: 2em;
-    }
-}
-
 @media (min-width: 1024px) {
     .skillsDiv {
         flex-direction: row;

@@ -126,9 +126,9 @@ footer {
         flex-direction: row;
     }
     .skills {
-        width: auto;
+        width: 22%;
     }
     .iconDiv {
-        margin: 1em;
+        margin-top: 2em;
     }
 }

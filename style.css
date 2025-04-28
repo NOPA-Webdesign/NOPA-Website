@@ -117,7 +117,19 @@ footer {
         width: auto;
     }
     .iconDiv {
-        margin: 0;
+        margin: 2em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .skillsDiv {
+        flex-direction: row;
+    }
+    .skills {
+        width: auto;
+    }
+    .iconDiv {
+        margin-top: 2em;
     }
 }
 
@@ -127,8 +139,5 @@ footer {
     }
     .skills {
         width: 22%;
-    }
-    .iconDiv {
-        margin-top: 2em;
     }
 }

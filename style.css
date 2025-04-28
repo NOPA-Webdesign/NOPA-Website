@@ -109,7 +109,7 @@ footer {
     margin: 1em;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 1024px) {
     .skillsDiv {
         flex-direction: column;
     }

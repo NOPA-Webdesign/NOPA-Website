@@ -140,4 +140,7 @@ footer {
     .skills {
         width: 22%;
     }
+    .iconDiv {
+        margin: 0;
+    }
 }
